@@ -1,7 +1,8 @@
 import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
+// biome-ignore lint/style/useImportType: <explanation>
 import { PostService } from './post.service';
-import { CreatePostInput } from './dto/create-post.input';
-import { UpdatePostInput } from './dto/update-post.input';
+import type { CreatePostInput } from './dto/create-post.input';
+import type { UpdatePostInput } from './dto/update-post.input';
 
 @Resolver('Post')
 export class PostResolver {
