@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    image: nestjs-app
+    ports:
+      - '3000:3000'
+    environment:
+      DATABASE_URL: postgresql://example_postgres_4tdf_user:9GTqDar85zLGm530O1A5ANFsj09AIJBQ@dpg-ct86jnd2ng1s73f26fm0-a.oregon-postgres.render.com/example_postgres_4tdf
